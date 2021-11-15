@@ -326,8 +326,157 @@ body {
   left: -60px;
   z-index: 1;
 }
-
+/*------------- START OF STYLING FOR GIRL ------------------------*/
+.girl {
+  position: absolute;
+}
+/*TORSO */
+.chest {
+  position: absolute;
+  background: #ffbd29;
+  width: 80px;
+  height: 85px;
+  border-radius: 35px;
+  left: 235px;
+  top: 75px;
+  z-index: 4;
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  box-shadow: inset 4px 5px 0px 0px #ecb634;
+}
+.belly {
+  position: absolute;
+  background: #ffbd29;
+  width: 70px;
+  height: 68px;
+  border-radius: 10px;
+  left: 220px;
+  top: 133px;
+  z-index: 5;
+  -moz-transform: translate(-1px, -1px) rotate(20deg);
+  -o-transform: translate(-1px, -1px) rotate(20deg);
+  -ms-transform: translate(-1px, -1px) rotate(20deg);
+  -webkit-transform: translate(-1px, -1px) rotate(20deg);
+  transform: translate(-1px, -1px) rotate(20deg);
+}
+.back-shadow {
+  position: absolute;
+  background: #ecb634;
+  height: 100%;
+  width: 10%;
+}
+/* Right Arm */
+.r-arm {
+  position: absolute;
+  background: #bd5239;
+  width: 25px;
+  height: 210px;
+  border-radius: 20px;
+  left: 89px;
+  top: -32px;
+  transform-origin: left top;
+  -moz-transform: translate(-80px, 71px) rotate(-78deg);
+  -o-transform: translate(-80px, 71px) rotate(-78deg);
+  -ms-transform: translate(-80px, 71px) rotate(-78deg);
+  -webkit-transform: translate(-80px, 71px) rotate(-78deg);
+  transform: translate(-80px, 71px) rotate(-78deg);
+}
+.r-sleeve {
+  position: absolute;
+  background: #ed9a18;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 40px;
+  height: 55px;
+  left: -8px;
+}
+.r-a-shadow {
+  position: absolute;
+  background: #8a3828;
+  height: 5%;
+  width: 100%;
+  top: 26%;
+}
+/* LEFT ARM */
+.l-arm {
+  position: absolute;
+  background: #9c4231;
+  width: 25px;
+  height: 190px;
+  border-radius: 20px;
+  left: 360px;
+  top: 51px;
+  z-index: 1;
+  transform-origin: left top;
+  -moz-transform: translate(-93px, 61px) rotate(-58deg);
+  -o-transform: translate(-93px, 61px) rotate(-58deg);
+  -ms-transform: translate(-93px, 61px) rotate(-58deg);
+  -webkit-transform: translate(-93px, 61px) rotate(-58deg);
+  transform: translate(-93px, 61px) rotate(-58deg);
+}
+.l-sleeve {
+  position: absolute;
+  background: #ed9a18;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 30px;
+  height: 50px;
+}
+.l-a-shadow {
+  position: absolute;
+  background: #8a3828;
+  width: 100%;
+  height: 5%;
+  top: 25%;
+}
+.pelvic-reg {
+  position: absolute;
+  background: #0073b5;
+  border-radius: 40px;
+  width: 95px;
+  height: 80px;
+  top: 185px;
+  left: 185px;
+  z-index: 4;
+}
 /* RIGHT LEG */
+.r-thigh {
+  position: absolute;
+  background: #bd5239;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 20px;
+  width: 33px;
+  height: 190px;
+  top: 230px;
+  left: 194px;
+  -moz-transform: translate(-2px, 5px) rotate(-80deg);
+  -o-transform: translate(-2px, 5px) rotate(-80deg);
+  -ms-transform: translate(-2px, 5px) rotate(-80deg);
+  -webkit-transform: translate(-2px, 5px) rotate(-80deg);
+  transform: translate(-2px, 5px) rotate(-80deg);
+  z-index: 6;
+  transform-origin: left top;
+}
+.r-pants {
+  position: absolute;
+  background: #0073b5;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 58px;
+  height: 125px;
+  left: -10px;
+}
+.r-shadow {
+  position: absolute;
+  background: #8a3828;
+  width: 100%;
+  height: 7%;
+  top: 65%;
+}
 .r-calf {
   position: absolute;
   background: #bd5239;
@@ -359,6 +508,15 @@ body {
   transform: rotate(-22deg);
   z-index: 1;
   transform-origin: left top;
+}
+.l-pants {
+  position: absolute;
+  background: #066da2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 55px;
+  height: 124px;
+  left: -10px;
 }
 .l-shadow {
   position: absolute;
@@ -394,6 +552,16 @@ body {
 /* darker colored sock on left leg ~ shadow */
 .darker {
   background: #dedede;
+}
+/*blue stripe on sock*/
+.blue-top {
+  position: absolute;
+  background: #0073b5;
+  width: 100%;
+  height: 30px;
+}
+#dark-blue {
+  background: #006aad;
 }
 .shoe-base {
   position: absolute;
@@ -457,19 +625,170 @@ body {
   position: absolute;
   background: #424242;
   border-radius: 40px;
-  width: 4%;
-  height: 1.5%;
-  z-index: 10;
+  width: 50%;
+  height: 40%;
+  top: 133%;
+  left: 20%;
+  transform-origin: left top;
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
-
-.l-pedal {
-  top: 88%;
-  left: 30%;
+/* HEAD & NECK */
+.neck {
+  position: absolute;
+  background: #a5422b;
+  border-radius: 20px;
+  width: 26px;
+  height: 40px;
+  left: 280px;
+  top: 50px;
+  z-index: 5;
+  transform-origin: center;
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
 }
-
-.r-pedal {
-  top: 72%;
-  left: 35%;
+.face {
+  position: absolute;
+  background: #bd5239;
+  width: 95px;
+  height: 100px;
+  border-radius: 50%;
+  left: 266px;
+  top: -35px;
+  z-index: 6;
+}
+.l-eye, .r-eye {
+  position: absolute;
+  background: none;
+  width: 20px;
+  height: 15px;
+  border-radius: 50%;
+}
+.l-eye {
+  box-shadow: inset 0.5px 3px 0px 0px #390000;
+  left: 42px;
+  top: 39px;
+}
+.r-eye {
+  box-shadow: inset 0.3px 3px 0px 0px #390000;
+  left: 74px;
+  top: 40px;
+}
+.l-cheek {
+  position: absolute;
+  background: #d36a69;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  top: 52px;
+  left: 21px;
+}
+.mouth {
+  position: absolute;
+  width: 20px;
+  height: 8%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px solid #e299a4;
+  background: white;
+  top: 65px;
+  left: 56px;
+}
+.nose {
+  position: absolute;
+  background: #a5422b;
+  width: 10px;
+  height: 6px;
+  border-radius: 20px;
+  top: 53px;
+  left: 64px;
+}
+.ear {
+  position: absolute;
+  background: #bd5239;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 39px;
+  left: -4px;
+}
+.r-hair {
+  position: absolute;
+  background: #390000;
+  width: 40px;
+  height: 30px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  left: 50px;
+}
+.l-hair {
+  position: absolute;
+  background: #390000;
+  width: 40px;
+  height: 58px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 40px;
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  left: 10px;
+  top: -7px;
+}
+.ponytail {
+  position: absolute;
+  background: #390000;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 150px;
+  height: 40px;
+  left: 140px;
+  top: 1px;
+  z-index: 2;
+  transform-origin: right top;
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -webkit-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.neck-shadow {
+  position: absolute;
+  background: #8a3828;
+  opacity: 0.75;
+  border-radius: 40px;
+  width: 8px;
+  height: 87%;
+}
+.jaw-shadow {
+  position: absolute;
+  background: none;
+  box-shadow: 5px 5px 0px 0px #9c4231;
+  border-radius: 50%;
+  width: 10px;
+  height: 40px;
+  top: 57px;
+  left: 16px;
+  -moz-transform: rotate(-212deg);
+  -o-transform: rotate(-212deg);
+  -ms-transform: rotate(-212deg);
+  -webkit-transform: rotate(-212deg);
+  transform: rotate(-212deg);
+}
+.ear-shadow {
+  position: absolute;
+  background: none;
+  box-shadow: -3px 0px 0px 0px #9c4231;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 #condepen-ref {
