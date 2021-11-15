@@ -442,6 +442,35 @@ body {
   left: 185px;
   z-index: 4;
 }
+/* Streaks of light on the ground */
+.streak1, .streak2, .streak3, .streak4 {
+  position: absolute;
+  background: white;
+  border-radius: 20px;
+  height: 5px;
+  opacity: 0.8;
+}
+.streak1 {
+  width: 50px;
+  top: 500px;
+  left: -70px;
+}
+.streak2 {
+  width: 80px;
+  top: 520px;
+  left: -63px;
+}
+.streak3 {
+  width: 30px;
+  top: 500px;
+  left: -22px;
+}
+.streak4 {
+  width: 120px;
+  top: 530px;
+  left: -91px;
+}
+
 /* RIGHT LEG */
 .r-thigh {
   position: absolute;
@@ -789,6 +818,24 @@ body {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+}
+/* Wind */
+.w1, .w2, .w3 {
+  position: absolute;
+  background: white;
+  opacity: 0.5;
+  width: 200px;
+  height: 4px;
+  right: 10px;
+}
+.w1 {
+  top: 50px;
+}
+.w2 {
+  top: 400px;
+}
+.w3 {
+  top: 600px;
 }
 
 #condepen-ref {
